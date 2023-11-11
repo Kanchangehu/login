@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my login or signup page</title>
+    <link rel="stylesheet" href="log-sign.css">
+</head>
+<body>
+    <div class="screen">
+        <header>
+            <h1 class="heading">Itbasket4u</h1>
+            <h3 class="title"> Login & signup Form</h3>
+        </header>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="bton"></div>
+                <button type="button" class="btn" onclick="login()">login</button>
+                <button type="button" class="btn" onclick="signup()">signup</button>
+            </div>
+            <form id="login" class="input-grp">
+                <input type="text" class="input-field" placeholder="user id" required>
+                <input type="text" class="input-field" placeholder="enter password" required>
+                <input type="checkbox" class="checkbox"><span>Remember password</span>
+                <button type="submit" class="sub-btn">log-in</button>
+            </form>
+            <form id="signup" class="input-grp">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="enter password" required>
+                <input type="checkbox" class="checkbox"><span>i agree to terms and conditions</span>
+                <button type="submit" class="sub-btn">sign-up</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("bton");
+
+        function signup(){
+            x.style.left = "400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+</body>
+</html>
